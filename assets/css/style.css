@@ -1,7 +1,147 @@
 /* universal which affects the whole site  */
 * {
+    box-sizing: border-box;
+    border: 4px solid purple;
     margin: 0;
     padding: 0;
+}
+
+:root {
+    --dark: black;
+    --light: white;
+    --padding: 4px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+
+/* header section */
+h1 {
+    font-size: 30px;
+    display: inline;
+    padding: var(--padding);
+}
+
+header {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* this is to get the links on one line */
+header ul {
+    text-decoration: none;
+    display: flex;
+    gap: 2em;
+    justify-content: flex-end;
+    margin-top: -25px;
+    padding: var(--padding);
+}
+
+/* this is for image banner */
+.image-banner {
+    position: relative;
+    /* padding: var(--padding); */
+}
+
+.image-picture {
+    margin: 0;
+}
+
+/* this is to postion the h2 for the image banner in a specific part */
+.image-banner h2 {
+    position: absolute;
+    margin-left: 49em;
+    margin-top: -20px;
+    color: var(--light);
+}
+
+/* this is the main part */
+/* main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+
+/* this is affecting all sections */
+.sections {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
     box-sizing: border-box;
-    border: blue 2px solid;
+    border: 4px solid purple;
+}
+
+h2 {
+    font-size: 30px;
+    padding: var(--padding);
+}
+
+/* about section */
+.my-image {
+    height: 13em;
+    border-radius: 30px;
+
+}
+
+.sections p {
+    margin: 10px;
+}
+
+/* work section for the biggest card */
+.work-card-big {
+    /* border-radius: 10%; */
+    /* display: flex; */
+}
+
+.card-image-big {
+    /* height: 10em;
+    width: 30em;
+    border-radius: 30px;
+    margin: 2em; */
+}
+
+.work-title-big {
+    font-size: 15px;
+}
+
+/* work section */
+/* .work-card {
+    border-radius: 10%;
+}
+
+.card-image {
+    height: 13em;
+    border-radius: 30px;
+    margin-top: 20em;
+}
+
+.work-title {
+    font-size: 15px;
+} */
+
+/* contact section */
+.sections ul {
+    text-decoration: none;
+    display: flex;
+    gap: 2em;
+    justify-content: flex-end;
+    padding: var(--padding);
+}
+
+/* footer */
+footer h3 {
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--padding);
+}
+
+a {
+    text-decoration: none;
+    /* color: var(--light); */
 }
