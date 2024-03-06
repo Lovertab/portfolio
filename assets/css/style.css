@@ -1,7 +1,73 @@
 /* universal which affects the whole site  */
 * {
+    box-sizing: border-box;
+    border: rgba(67, 67, 160, 0.739) 4px solid;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    border: blue 2px solid;
+}
+
+:root {
+    --dark: black;
+    --light: white;
+    --padding: 4px;
+}
+
+/* header section */
+h1 {
+    font-size: 30px;
+    display: inline;
+    padding: var(--padding);
+}
+
+header {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* this is to get the links on one line */
+header ul {
+    text-decoration: none;
+    display: flex;
+    gap: 2em;
+    justify-content: flex-end;
+    margin-top: -25px;
+    padding: var(--padding);
+}
+
+/* this is for image banner */
+.image-banner {
+    position: relative;
+    width: 100%;
+    padding: var(--padding);
+}
+
+/* this is to postion the h2 for the image banner in a specific part */
+.image-banner h2 {
+    position: absolute;
+    margin-right: -100px;
+}
+
+/* this is the main part */
+/* this is affecting all sections */
+.sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/* work section */
+.work-card {
+    border-radius: 10%;
+}
+
+.work-title {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    /* color: var(--light); */
 }
