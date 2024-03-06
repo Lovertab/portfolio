@@ -145,3 +145,36 @@ a {
     text-decoration: none;
     /* color: var(--light); */
 }
+
+/* media quries */
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    .sections,
+    .my-image,
+    .image-banner,
+    .work-card-big,
+    .work-card,
+    .sections ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* @media screen and (max-width: 992px) {
+    main {
+        background-color: aqua;
+    } 
+}*/
