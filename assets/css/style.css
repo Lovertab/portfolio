@@ -17,7 +17,6 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     justify-content: flex-start;
 }
 
@@ -61,20 +60,16 @@ header ul {
     color: var(--light);
 }
 
-/* this is the main part */
-/* main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-} */
-
 /* this is affecting all sections */
 .sections {
     display: flex;
-    justify-content: space-between;
     margin: 1em;
     box-sizing: border-box;
     border: 4px solid purple;
+}
+
+.section-info {
+    margin-right: 3em;
 }
 
 h2 {
@@ -94,16 +89,36 @@ h2 {
 }
 
 /* work section for the biggest card */
-.work-card-big {
-    /* border-radius: 10%; */
-    /* display: flex; */
+
+#work {
+    display: flex;
+    flex-direction: row;
 }
 
+.work-card-big {
+    border-radius: 10%;
+    margin: 2%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 4px solid purple;
+
+}
+
+/* make the other projects flexed as well
+this is the work container making this 100% allows the bigger picture to be 100% of the container which is the parent container */
+.project-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* the wrap allows it to obey the 100% width so its sending it to the next line instead of making the work card big share the same line */
+}
+
+/* this is the image made it size longer horzionatally */
 .card-image-big {
-    /* height: 10em;
-    width: 30em;
     border-radius: 30px;
-    margin: 2em; */
+    height: 10em;
+    width: 100%;
+    padding: var(--padding);
 }
 
 .work-title-big {
@@ -111,26 +126,30 @@ h2 {
 }
 
 /* work section */
-/* .work-card {
-    border-radius: 10%;
+.work-card {
+    border-radius: 10em;
+    padding: 1%;
+    width: 50%;
 }
 
 .card-image {
     height: 13em;
     border-radius: 30px;
-    margin-top: 20em;
+    width: 100%;
 }
 
 .work-title {
     font-size: 15px;
-} */
+}
 
 /* contact section */
-.sections ul {
+
+#contact ul {
     text-decoration: none;
+    margin-top: 0.5em;
+    margin-left: 2em;
     display: flex;
-    gap: 2em;
-    justify-content: flex-end;
+    gap: 5.5em;
     padding: var(--padding);
 }
 

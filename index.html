@@ -6,6 +6,7 @@
     <title>Loverta Brown Professional Portfolio</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -15,10 +16,11 @@
         <!-- top-nav is my links that will connect to each section -->
         <nav class="top-nav">
             <ul>
-                <li><a href="#" class="scroll-into-view">About Me</a></li>
-                <li><a href="#" class="scroll-into-view">Work</a></li>
-                <li><a href="#" class="scroll-into-view">Contact Me</a></li>
-                <li><a href="#" class="scroll-into-view">Resume</a></li>
+                <!-- the # makes it internal linking so we would put the id name next to it-->
+                <li><a href="#about" class="about-me">About Me</a></li>
+                <li><a href="#work" class="work">Work</a></li>
+                <li><a href="#contact" class="contact-me">Contact Me</a></li>
+                <li><a href="#" class="resume">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -31,49 +33,63 @@
             <h2>Nature Rules!</h2>
         </section> -->
         <!-- about me section -->
-        <section class="sections">
-            <h2>About Me</h2>
-            <img src="assets/images/loverta.jpeg" class="my-image" alt="this is my image">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis eaque delectus facilis
-                harum aperiam vitae, nemo eius mollitia officiis fuga dolor nam voluptates veritatis beatae labore
-                placeat tempore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fuga molestias
-                consequuntur placeat a, facere unde voluptate quibusdam atque saepe inventore impedit cupiditate sequi
-                beatae necessitatibus, ab perferendis! Quo, dolores.</p>
+        <section class="sections" class="about-me" id="about">
+            <section class="section-info">
+                <h2>About Me</h2>
+            </section>
+            <article>
+                <img src="assets/images/loverta.jpeg" class="my-image" alt="this is my image">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis eaque delectus
+                    facilis
+                    harum aperiam vitae, nemo eius mollitia officiis fuga dolor nam voluptates veritatis beatae labore
+                    placeat tempore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fuga molestias
+                    consequuntur placeat a, facere unde voluptate quibusdam atque saepe inventore impedit cupiditate
+                    sequi
+                    beatae necessitatibus, ab perferendis! Quo, dolores.</p>
+            </article>
         </section>
         <!-- my Work section -->
-        <section class="sections">
-            <h2>Work</h2>
-            <div class="work-card-big">
-                <img src="assets/images/loverta.jpeg" class="card-image-big" alt="biggest work">
-                <h3 class="work-title-big">work title</h3>
-            </div>
-            <!-- <div class="work-card">
-                                <img src="#" class="card-image" alt="work">
-                                <h3 class="work-title">work title</h3>
-                            </div>
-                            <div class="work-card">
-                                <img src="#" class="card-image" alt="work">
-                                <h3 class="work-title">work title</h3>
-                            </div>
-                            <div class="work-card">
-                                <img src="#" class="card-image" alt="work">
-                                <h3 class="work-title">work title</h3>
-                            </div>
-                            <div class="work-card">
-                                <img src="#" class="card-image" alt="work">
-                                <h3 class="work-title">work title</h3>
-                            </div> -->
+        <section class="sections" id="work">
+            <section class="section-info">
+                <h2>Work</h2>
+            </section>
+            <section class="project-container">
+                <article class="work-card-big">
+                    <img src="assets/images/loverta.jpeg" class="card-image-big" alt="biggest work">
+                    <h3 class="work-title-big">work title</h3>
+                </article>
+                <article class="work-card">
+                    <img src="assets/images/loverta.jpeg" class="card-image" alt="work">
+                    <h3 class="work-title">work title</h3>
+                </article>
+                <article class="work-card">
+                    <img src="assets/images/loverta.jpeg" class="card-image" alt="work">
+                    <h3 class="work-title">work title</h3>
+                </article>
+                <article class="work-card">
+                    <img src="assets/images/loverta.jpeg" class="card-image" alt="work">
+                    <h3 class="work-title">work title</h3>
+                </article>
+                <article class="work-card">
+                    <img src="assets/images/loverta.jpeg" class="card-image" alt="work">
+                    <h3 class="work-title">work title</h3>
+                </article>
+                <!-- if it has text, link and an image use article -->
+            </section>
         </section>
         <!-- contact me section -->
-        <section class="sections">
-            <h2>Contact Me</h2>
-            <nav>
+        <section class="sections" class="contact-me" id="contact">
+            <section class="section-info">
+                <h2>Contact Me</h2>
+            </section>
+            <nav class="bottom-nav">
                 <ul>
                     <li><a href="tel:+9176877945">Phone Number</a></li>
                     <li><a href="mailto:lovertbrown@gmail.com">lovertabrown@gmail.com</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">Github</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/loverta-brown-299b21247/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://github.com/Lovertab?tab=repositories" target="_blank"
+                            rel="noopener noreferrer">Github</a></li>
                     <li><a href="#" target="_blank" rel="noopener noreferrer">Spotify</a></li>
                 </ul>
             </nav>
@@ -83,7 +99,7 @@
     <footer>
         <h3>Copyright &copy; 2024</h3>
     </footer>
+    <script src="script.js"></script>
 </body>
-
 
 </html>
